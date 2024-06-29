@@ -84,10 +84,7 @@
   </head>
   <body>
     <div>
-      <!-- <div class="nav-buttons">
-        <button id="prevBtn" >Previous</button>
-    </div> -->
-
+     
       <div class="carousel-container">
         <div class="carousel">
           <div class="card">
@@ -146,15 +143,7 @@
           </div>
         </div>
       </div>
-      <div class="buttons">
-        <div class="nav-buttons buttons">
-          <button id="nextBtn"></button>
-        </div>
-      </div>
-      <div class="nav-buttons buttons">
-        <button id="prevBtn"></button>
-      </div>
-    </div>
+   
 
     <script>
       const carousel = document.querySelector(".carousel");
@@ -185,16 +174,12 @@
         rotateCarousel();
       }
 
-      // Event listeners for manual rotation
-      nextBtn.addEventListener("click", nextCard);
-      prevBtn.addEventListener("click", prevCard);
-
-      // You can also rotate by clicking on the cards
+  
       cards.forEach((card) => {
         card.addEventListener("click", nextCard);
       });
 
-      // Initial setup
+      
       rotateCarousel();
     </script>
   </body>
